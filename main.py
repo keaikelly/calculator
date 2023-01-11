@@ -5,7 +5,7 @@ from PyQt5. QtGui import QIcon #  icon을 추가하기 위한 라이브러리
 
 
 class Calculator(QWidget):
-    
+    """ 계산기 프로젝트 """
     def __init__(self):
         super().__init__()
         self.initUI()
