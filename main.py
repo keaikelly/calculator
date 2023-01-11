@@ -46,7 +46,7 @@ class Calculator(QWidget):
         self.te1.clear()
 
 if __name__=='__main__':
-    """ main"""
+    """ main """
     app = QApplication(sys.argv)
     view = Calculator()
     sys.exit(app.exec_())
