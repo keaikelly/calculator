@@ -1,4 +1,4 @@
-# ch 6.3.2 ui.py
+# ch 6.3.3 ui.py
 from PyQt5.QtWidgets import (QApplication, QWidget, QPushButton, QVBoxLayout, QMessageBox, QPlainTextEdit, QHBoxLayout, QLineEdit, QComboBox) # QLineEdit, QComboBox 추가
 from PyQt5.QtGui import QIcon
 from PyQt5 import QtCore #모듈추가
@@ -48,10 +48,13 @@ class View(QWidget):
         self.resize(256,256)
         self.show()
 
-        
-
     def activateMessage(self, text):
+        self.te1.appendPlainText(text)    
+
+    def setDisplay(self, text): # 함수명 변경
         self.te1.appendPlainText(text)
         
     def clearMessage(self):
         self.te1.clear()
+
+   
