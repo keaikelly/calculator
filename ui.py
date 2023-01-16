@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# ch 6.3.3 ui.py
-=======
-# ch 6.3.1 ui.py
->>>>>>> 6b3755fc0bfa2ffa28d0c5686b9729bb0e2d5de9
+# ch 6.6.1 ui.py
 from PyQt5.QtWidgets import (QApplication, QWidget, QPushButton, QVBoxLayout, QMessageBox, QPlainTextEdit, QHBoxLayout, QLineEdit, QComboBox) # QLineEdit, QComboBox 추가
 from PyQt5.QtGui import QIcon
 from PyQt5 import QtCore #모듈추가
@@ -30,7 +26,7 @@ class View(QWidget):
         self.le2.setAlignment(QtCore.Qt.AlignRight) #라인 에디트2 문자열 배치 설정
 
         self.cb = QComboBox(self) # 콤보 박스 추가
-        self.cb.addItems(['+', '-', '*', '/']) # 콤보 박스 항목 추가 (연산자로 사용)
+        self.cb.addItems(['+', '-', '*', '/', '^']) # 거듭제곱 연산자 추가
 
         hbox=QHBoxLayout()
         hbox.addStretch(1)
@@ -55,18 +51,9 @@ class View(QWidget):
         self.show()
     
 
-<<<<<<< HEAD
     def setDisplay(self, text): # 함수명 변경
         self.te1.appendPlainText(text)
         
-=======
-    def setDisplay(self): # 메서드 이름 변경
-        self.te1.appendPlainText("Button clicked!")
-
-    def activateMessage(self):
-        self.te1.appendPlainText("Button clicked!")
-
->>>>>>> 6b3755fc0bfa2ffa28d0c5686b9729bb0e2d5de9
     def clearMessage(self):
         self.te1.clear()
 
