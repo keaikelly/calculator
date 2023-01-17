@@ -1,4 +1,4 @@
-# ch 7.5.2 ctrl.py
+# ch 7.5.1 ctrl.py
 class Control:
 
     def __init__(self, view):
